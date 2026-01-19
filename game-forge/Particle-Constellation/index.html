@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particle Constellation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    
+    <div class="controls">
+        <h2>✨ Controls</h2>
+        <div class="control-group">
+            <label>Particles: <span id="countValue">150</span></label>
+            <input type="range" id="particleCount" min="50" max="300" value="150">
+        </div>
+        <div class="control-group">
+            <label>Connection Distance: <span id="distValue">150</span></label>
+            <input type="range" id="connectionDist" min="50" max="250" value="150">
+        </div>
+        <div class="control-group">
+            <label>Mouse Influence: <span id="mouseValue">100</span></label>
+            <input type="range" id="mouseRadius" min="50" max="200" value="100">
+        </div>
+        <button id="resetBtn">Reset Particles</button>
+    </div>
+
+    <div class="info">
+        Move your mouse to interact with the constellation
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
